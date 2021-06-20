@@ -4,6 +4,7 @@ import SplashPage from "./splash";
 import BasicHome from "./basicsHomePage";
 import ChooseDomHand from "./handDominance";
 import Quiz from "./quiz";
+import ShowImage from "./showimage";
 
 function App() {
   return (
@@ -18,6 +19,9 @@ function App() {
           </Route>
           <Route exact path="/hand">
             <ChooseDomHand />
+          </Route>
+          <Route exact path="/guide">
+            <ShowImage />
           </Route>
           <Route exact path="/quiz">
             <Quiz />

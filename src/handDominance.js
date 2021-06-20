@@ -21,7 +21,7 @@ const ChooseDomHand = () => {
               alighnItems: "left"
               }}>Left!</Button></Link>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <Link to="quiz"><Button style={{ height: "100%",
+                <Link to="guide"><Button style={{ height: "100%",
               backgroundColor: "#B2D0DF",
               color: "white",
               alighnItems: "right"
