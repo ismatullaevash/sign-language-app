@@ -14,8 +14,8 @@ const ShowImage = () => {
             backgroundImage: `url("https://github.com/ismatullaevash/sign-language-app/blob/main/static/mesh-gradient.png?raw=true")`}}>
         
             <center><img src={image} alt="ASL Signs" style={{
-                height: 210,
-                width: 300,
+                height: 320,
+                width: 500,
             }} /></center>
 
 
