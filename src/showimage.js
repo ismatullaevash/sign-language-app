@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Button } from '@geist-ui/react';
 import image from './aslSigns.jpg'
+import { Link } from "react-router-dom";
 
 const ShowImage = () => {
     return (
@@ -21,10 +22,10 @@ const ShowImage = () => {
 
 
             <br></br> <br></br>
-            <center><Button style={{ height: "100%",
+            <center><Link to="quiz"><Button style={{ height: "100%",
             backgroundColor: "#B2D0DF",
             color: "white"
-            }}>Continue</Button></center>
+            }}>Continue</Button></Link></center>
         </div>
     );
 }
