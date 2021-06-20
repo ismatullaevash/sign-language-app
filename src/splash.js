@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import {Button} from '@geist-ui/react';
-import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const SplashPage = () => {
   return (
@@ -16,10 +16,10 @@ const SplashPage = () => {
       <br></br> 
       <span>ASL made personal and easy using AI!</span>  
       <br></br><br></br>
-      <center> <Button style={{ height: "100%",
+      <center> <Link to="/basic"><Button style={{ height: "100%",
             backgroundColor: "#B2D0DF",
             color: "white"
-            }}>Let's Learn!</Button></center>
+            }}>Let's Learn!</Button></Link></center>
       </h1> 
       </div>
   );

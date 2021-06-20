@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Button} from '@geist-ui/react';
+import { Link } from "react-router-dom";
 
 const BasicHome = () => {
     return (
@@ -15,10 +16,10 @@ const BasicHome = () => {
         <br></br> 
         <span>Start with the essentials follow along with the hand</span>  
         <br></br><br></br>
-        <center> <Button style={{ height: "100%",
+        <center> <Link to="/hand"><Button style={{ height: "100%",
             backgroundColor: "#B2D0DF",
             color: "white"
-            }}>Turn on webcam!</Button></center>
+            }}>Turn on webcam!</Button></Link></center>
         </h1> 
         </div>
     );
