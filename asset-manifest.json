@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/signum/static/css/main.d860c1db.chunk.css",
+    "main.js": "/signum/static/js/main.91cc5125.chunk.js",
+    "main.js.map": "/signum/static/js/main.91cc5125.chunk.js.map",
+    "runtime-main.js": "/signum/static/js/runtime-main.965d8849.js",
+    "runtime-main.js.map": "/signum/static/js/runtime-main.965d8849.js.map",
+    "static/js/2.bef96405.chunk.js": "/signum/static/js/2.bef96405.chunk.js",
+    "static/js/2.bef96405.chunk.js.map": "/signum/static/js/2.bef96405.chunk.js.map",
+    "static/js/3.efad3379.chunk.js": "/signum/static/js/3.efad3379.chunk.js",
+    "static/js/3.efad3379.chunk.js.map": "/signum/static/js/3.efad3379.chunk.js.map",
+    "index.html": "/signum/index.html",
+    "static/css/main.d860c1db.chunk.css.map": "/signum/static/css/main.d860c1db.chunk.css.map",
+    "static/js/2.bef96405.chunk.js.LICENSE.txt": "/signum/static/js/2.bef96405.chunk.js.LICENSE.txt",
+    "static/media/aslSigns.c51e4ebf.jpg": "/signum/static/media/aslSigns.c51e4ebf.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.965d8849.js",
+    "static/js/2.bef96405.chunk.js",
+    "static/css/main.d860c1db.chunk.css",
+    "static/js/main.91cc5125.chunk.js"
+  ]
+}
