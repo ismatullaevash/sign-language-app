@@ -89,8 +89,13 @@ const Quiz = () => {
   }, []);
 
   return (
-    <div className="App">
-      <header className="App-header">
+    <div>
+      <header
+        className="App-header"
+        style={{
+          backgroundImage: `url("https://github.com/ismatullaevash/sign-language-app/blob/main/static/mesh-gradient.png?raw=true")`,
+        }}
+      >
         <Webcam
           ref={webcamRef}
           muted={true}
@@ -103,13 +108,14 @@ const Quiz = () => {
             zindex: 9,
             width: 640,
             height: 480,
+            backgroundImage: `url("https://github.com/ismatullaevash/sign-language-app/blob/main/static/mesh-gradient.png?raw=true")`,
           }}
         />
 
         <canvas
           ref={canvasRef}
           style={{
-            position: "absolute",           
+            position: "absolute",
             marginLeft: "auto",
             left: 0,
             right: 0,
@@ -120,9 +126,10 @@ const Quiz = () => {
           }}
         />
 
-        <div style={{
+        <div
+          style={{
             display: "flex",
-            position: "flex",           
+            position: "flex",
             marginRight: "auto",
             left: 0,
             right: 0,
@@ -130,12 +137,10 @@ const Quiz = () => {
             height: 480,
             textAlign: "left",
             color: "white",
-            backgroundImage: `url("https://github.com/ismatullaevash/sign-language-app/blob/main/static/mesh-gradient.png?raw=true")`}}
-          >
-            <h1>Hello
-            <p>so i said this and this and this asdasdnajsdajksdhahdkashdjkash</p>
-            </h1>
-            
+            backgroundImage: `url("https://github.com/ismatullaevash/sign-language-app/blob/main/static/mesh-gradient.png?raw=true")`,
+          }}
+        >
+          <h1>Now try it out yourself!</h1>
         </div>
       </header>
     </div>

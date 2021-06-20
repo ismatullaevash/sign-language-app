@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Button} from '@geist-ui/react';
+import { Link } from "react-router-dom";
 
 const ChooseDomHand = () => {
     return (
@@ -13,17 +14,18 @@ const ChooseDomHand = () => {
             backgroundImage: `url("https://github.com/ismatullaevash/sign-language-app/blob/main/static/mesh-gradient.png?raw=true")`}}>
         <h1><center>First, choose your dominant hand</center>
         <br></br><br></br>
+        <Link to="quiz">
        <Button style={{ height: "100%",
               backgroundColor: "#B2D0DF",
               color: "white",
               alighnItems: "left"
-              }}>Left!</Button>
+              }}>Left!</Button></Link>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <Button style={{ height: "100%",
+                <Link to="quiz"><Button style={{ height: "100%",
               backgroundColor: "#B2D0DF",
               color: "white",
               alighnItems: "right"
-              }}>Right!</Button>
+              }}>Right!</Button></Link>
         </h1> 
         </div>
     );
