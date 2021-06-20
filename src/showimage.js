@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import {Button} from '@geist-ui/react';
-import { Link } from "react-router-dom";
+import { Button } from '@geist-ui/react';
+import image from './aslSigns.jpg'
 
-const BasicHome = () => {
+const ShowImage = () => {
     return (
         <div style={{ height: "100%",
             width: "100%",
@@ -12,17 +12,21 @@ const BasicHome = () => {
             justifyContent: "center",
             color: "white",
             backgroundImage: `url("https://github.com/ismatullaevash/sign-language-app/blob/main/static/mesh-gradient.png?raw=true")`}}>
-        <h1><center>Basics</center>
-        <br></br> 
-        <span>Start with the essentials follow along with the hand</span>  
-        <br></br><br></br>
-        <center> <Link to="/hand"><Button style={{ height: "100%",
+        
+            <center><img src={image} alt="ASL Signs" style={{
+                height: 210,
+                width: 300,
+            }} /></center>
+
+
+
+            <br></br> <br></br>
+            <center><Button style={{ height: "100%",
             backgroundColor: "#B2D0DF",
             color: "white"
-            }}>Turn on webcam!</Button></Link></center>
-        </h1> 
+            }}>Continue</Button></center>
         </div>
     );
 }
 
-export default BasicHome;
+export default ShowImage;

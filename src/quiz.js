@@ -15,8 +15,10 @@ const Quiz = () => {
     // e.g. const net = await cocossd.load();
     //below is working model
     // https://tensorflowjsrealtimemodel.s3.au-syd.cloud-object-storage.appdomain.cloud/model.json
+
+    //"https://signum-ml-sign-app.s3.au-syd.cloud-object-storage.appdomain.cloud/model.json"
     const net = await tf.loadGraphModel(
-        "https://signum-ml-sign-app.s3.au-syd.cloud-object-storage.appdomain.cloud/model.json"
+      "https://tensorflowjsrealtimemodel.s3.au-syd.cloud-object-storage.appdomain.cloud/model.json"
     );
 
     //  Loop and detect hands
@@ -87,21 +89,26 @@ const Quiz = () => {
   }, []);
 
   return (
-    <div className="App">
-      <header className="App-header">
+    <div>
+      <header
+        className="App-header"
+        style={{
+          backgroundImage: `url("https://github.com/ismatullaevash/sign-language-app/blob/main/static/mesh-gradient.png?raw=true")`,
+        }}
+      >
         <Webcam
           ref={webcamRef}
           muted={true}
           style={{
             position: "absolute",
             marginLeft: "auto",
-            marginRight: "auto",
             left: 0,
             right: 0,
             textAlign: "center",
             zindex: 9,
             width: 640,
             height: 480,
+            backgroundImage: `url("https://github.com/ismatullaevash/sign-language-app/blob/main/static/mesh-gradient.png?raw=true")`,
           }}
         />
 
@@ -110,7 +117,6 @@ const Quiz = () => {
           style={{
             position: "absolute",
             marginLeft: "auto",
-            marginRight: "auto",
             left: 0,
             right: 0,
             textAlign: "center",
@@ -119,6 +125,23 @@ const Quiz = () => {
             height: 480,
           }}
         />
+
+        <div
+          style={{
+            display: "flex",
+            position: "flex",
+            marginRight: "auto",
+            left: 0,
+            right: 0,
+            width: 640,
+            height: 480,
+            textAlign: "left",
+            color: "white",
+            backgroundImage: `url("https://github.com/ismatullaevash/sign-language-app/blob/main/static/mesh-gradient.png?raw=true")`,
+          }}
+        >
+          <h1>Now try it out yourself!</h1>
+        </div>
       </header>
     </div>
   );
