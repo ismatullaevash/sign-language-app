@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+## 💡 Inspiration
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The National Center for Health Statistics estimates that 28 million Americans (about 10% of the population) have some degree of hearing loss. However, because many people have not been many people have been exposed or can communicate with others in American Sign Language, this barrier leaves some feeling helpless. We know this to be true because we have seen it online and in real life. Take this for example: 
 
-## Available Scripts
+[One Reddit user in the r/deaf community describes their frustrations communicating with others in their day-to-day life.](https://www.reddit.com/r/deaf/comments/m7mz1c/frustrations_in_daily_life/?utm_source=share&utm_medium=web2x&context=3) 
 
-In the project directory, you can run:
+*"So I work in retail as a cashier, and I have a sign “I’m deaf, please speak up” doesn’t seem to help whatsoever when customers don’t even speak up even when I ask them to verbally!"*
 
-### `npm start`
+Back on February 12, 2020, Taylor interviewed students for an ASL story for journalism. At Taylor's school, they do Day of Silence for ASL students to bring awareness to the Deaf community every late September. Landon Block, a student learning ASL, talks about his experience: 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+*"Communication barrier that you have with the hearing world was difficult. It was rough because I did not have anyone to do ASL in any of my classes. I had to communicate mostly through writing and the troubles it brings (5:01)"* 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+*"It was frustrating because I could not share my ideas and had to write them all down and then show others. It was pretty complicated, and it isn’t easy to explain things."*
 
-### `npm test`
+And according to our competitive analysis of other sign language or language learning programs using the SWOT analysis, many competitor benefits were missing a lack of personalization and use of artificial intelligence that could have boosted their product. Two really helpful aspects were gamification and free access. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+That's why we created **Signum, a web app that uses machine learning and camera vision to detect American Sign Language gestures in real-time for beginners who want to learn practical and necessary phrases in a fun, engaging way. ✨**
 
-### `npm run build`
+## 💻 What it does
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Signum has...
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- A **clear onboarding process** that asks for which dominant hand, directions, and to turn on the webcam
+- An **intuitive guide** that translates the image of a fingerspelling hand sign to the letter with an image processing deep learning network that delivers a model with **90% accuracy**
+- After accumulating a certain number of points, the user earns a badge or badges and can **share them with friends to encourage them to learn as well**!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+We use AI to analyze a large dataset and provide helpful insights into **accuracy, in real-time, almost as if someone is teaching you in real life**, and more. The gamification element is not meant to be addicting. Rather, we use it to **leverage gamification to motivate self-improvement** using a point system for getting a badge to share and help motivate other friends to join instead of competition like a leaderboard. 
 
-### `npm run eject`
+## 🔨 How we built it
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+**tl;dr** 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Idea - brainstorming where we wanted to focus and building on one idea we decided together 
+2. Dividing roles and project planning
+3. Research: Competitive Analysis, MVP Roadmap, information architecture 
+4. User interface: Creating mid-fidelity mockups on Figma, design system using Storybook 
+5. Front end: Use some of the CSS code and information from Figma and Storybook. React.js
+6. Back end: Using Firebase to create the login and sign up database, Node.js, and Python 
+7. Machine learning: Training using TensorFlow 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## 🧠 Challenges we ran into
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Deploying Machine Learning model
+- Connecting model with the rest of the application
+- Creating an artificial intelligence model. It was Susan's first time dealing with image processing, so it took quite a few errors and trials. For example, the model may have predicted the letters as either O or F when it's supposed to be C or I
+- Storybook integration was glitching out a lot. We looked through GitHub issues and saw what other GitHub users said to fix them and make them work
 
-## Learn More
+## 🏅 Accomplishments that we're proud of
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- It was the first-ever hackathon for Susan, so we're proud of her achievement! ✨
+- Mar has not worked with React before until now!
+- A fully functional website
+- Training a model that has 90% accuracy in the span of 24 hours
+- Slick and easy-to-use design. Learned how to create color gradients, rapid design process and design system, and more
+- We have built a working prototype in less than 24 hours 🏆
+- Helped one another out jumping on calls, chatting, and having fun along the process!
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📖 What we learned
 
-### Code Splitting
+- Eliminate features or aspects like more categories and profile feature that may take too much time given that we are under time pressure
+- MVP and business side perspective of design that can affect how a user interacts and chooses to stay on the platform
+- Adding webcam or camera detection onto a React.js framework
+- Training TensorFlow model without any experience
+- Continue growth mindset, encouraging and celebrating each other's small and big victories!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🔜 What's next for Signum
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **More categories** that expand from fingerspelling to ASL phrases. Initially, we were deciding to use multiple categories. However, due to time constraints, we decided to only include essentials or the basics that is important to learn/practice
+- **Including a profile and adding user feature** Other community members are able to browse other profiles and build connections, track their own progress, and edit their own information
+- **Continuing to improve design and overall product** with constructive feedback, what users liked, disliked, and more. One aspect based on what we see is to improve is to have top navigation bars or some navigation that goes directly to the categories or homepage.
+- **Adding expressive sign language models**
+- **Expanding ASL to other sign languages**
+- **Continue to research about sign language and the Deaf community and ways we can make technology more inclusive**
